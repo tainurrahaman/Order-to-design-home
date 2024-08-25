@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment_3</title>
+    <link rel="stylesheet" href="style.css" />
     <!-- Tailwind Css CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/3968d40771.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisyUI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -40,5 +45,75 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header
+      class="font-manrope bg-gradient-to-b from-[#F4F4F4] ... px-5 md:px-8 lg:px-32 pt-8 md:pt-10 lg:pt-14"
+    >
+      <div class="flex justify-between">
+        <div class="company-name flex mx-0 my-auto space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 bg-[#ABEF5F] mx-0 my-auto rounded-full h-8 w-8 p-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+          <h3 class="font-extrabold text-[#212121] text-[32px]">Rinterio</h3>
+        </div>
+        <div class="navbar-center hidden lg:flex space-x-9">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="text-[#494949] font-extrabold text-base mx-0 my-auto"
+                >Home</a
+              >
+            </li>
+            <li><a class="menu-list">Services</a></li>
+            <li><a class="menu-list">Portfolio</a></li>
+            <li><a class="menu-list">Blogs</a></li>
+            <li><a class="menu-list">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="search-to-cart space-x-4 flex">
+          <i
+            class="fa-solid fa-magnifying-glass bg-[#FFFFFF] mx-0 my-auto rounded-full h-8 w-8 p-2"
+          ></i>
+          <button>
+            <i
+              class="fa-solid fa-cart-shopping bg-[#FFFFFF] mx-0 my-auto rounded-full h-8 w-8 p-2"
+            ></i>
+          </button>
+          <div
+            class="flex space-x-3 bg-[#ABEF5F] rounded-[32px] mx-0 my-auto px-5 py-3"
+          >
+            <a class="font-extrabold text-[#1C1C1C] text-xl mx-0 my-auto"
+              >Book Consult</a
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 bg-[#1C1C1C] text-white mx-0 my-auto rounded-full h-8 w-8 p-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
