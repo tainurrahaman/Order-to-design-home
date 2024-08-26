@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment_3</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Tailwind Css CDN -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font awesome CDN -->
+    <!-- Font Awesome CDN -->
     <script
       src="https://kit.fontawesome.com/3968d40771.js"
       crossorigin="anonymous"
@@ -18,26 +18,12 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Family Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-            },
-          },
-        },
-      };
-    </script>
 
     <style>
       .font-manrope {
@@ -49,7 +35,8 @@
     <header
       class="font-manrope bg-gradient-to-b from-[#F4F4F4] ... px-5 md:px-8 lg:px-32 pt-8 md:pt-10 lg:pt-14"
     >
-      <div class="flex justify-between">
+      <div class="flex justify-between items-center">
+        <!-- Logo Section -->
         <div class="company-name flex mx-0 my-auto space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +54,8 @@
           </svg>
           <h3 class="font-extrabold text-[#212121] text-[32px]">Rinterio</h3>
         </div>
+
+        <!-- Desktop Menu -->
         <div class="navbar-center hidden lg:flex space-x-9">
           <ul class="menu menu-horizontal px-1">
             <li>
@@ -80,7 +69,9 @@
             <li><a class="menu-list">Contact Us</a></li>
           </ul>
         </div>
-        <div class="hidden search-to-cart md:space-x-4 md:flex">
+
+        <!-- Search, Cart, and Book Consult Button (Visible on Medium and Larger Devices) -->
+        <div class="hidden md:flex md:space-x-4">
           <i
             class="fa-solid fa-magnifying-glass bg-[#FFFFFF] mx-0 my-auto rounded-full h-8 w-8 p-2"
           ></i>
@@ -111,8 +102,44 @@
             </svg>
           </div>
         </div>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+        <label
+          for="menu-toggle"
+          class="lg:hidden flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-gray-800 hover:border-gray-800 cursor-pointer"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </label>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="hidden peer-checked:block lg:hidden mt-4">
+        <ul id="mobile-menu" class="space-y-4">
+          <li>
+            <a class="text-[#494949] font-extrabold text-base" href="#">Home</a>
+          </li>
+          <li><a class="menu-list" href="#">Services</a></li>
+          <li><a class="menu-list" href="#">Portfolio</a></li>
+          <li><a class="menu-list" href="#">Blogs</a></li>
+          <li><a class="menu-list" href="#">Contact Us</a></li>
+        </ul>
       </div>
     </header>
+
     <main></main>
     <footer></footer>
   </body>
